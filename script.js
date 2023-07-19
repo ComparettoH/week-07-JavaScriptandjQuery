@@ -3,11 +3,11 @@ console.log ('test 654')
 $(document).ready(onReadySetGo);
 
 function onReadySetGo (){
-console.log('test 01234')
+// console.log('test 01234')
 // Listener/Handler
 $("#gButton").on('click', makeDivs);
-$(".divBb").on('click', '#deleteButton', removeDivs);
-$(".divBb").on('click', '#yButton', addYellow);
+$("#divBb").on('click', '.deleteButton', removeDivs);
+$("#divBb").on('click', '.yButton', addYellow);
 
 
 }
@@ -28,14 +28,14 @@ function makeDivs (){
     // console.log('click boom')
    
     // formats Divs & displays count
-    $('.divBb').append(`
+    $('#divBb').append(`
     <div>
     <p>${count}</p>
-    <button id="yButton">Yellow</button>
-    <button id="deleteButton">Delete</button>
+    <button class="yButton">Yellow</button>
+    <button class="deleteButton">Delete</button>
     </div>
     `)
 
     count ++;
-    $("#p").text(count)
+  
 }

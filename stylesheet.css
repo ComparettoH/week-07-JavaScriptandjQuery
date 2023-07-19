@@ -3,8 +3,9 @@ h1 {
     color: white
 }
 
-.divBb {
-    background-color: rgb(109, 5, 5)
+#divBb {
+    background-color: rgb(109, 5, 5);
+    color: lightgray;
 }
 
 .yellow {
